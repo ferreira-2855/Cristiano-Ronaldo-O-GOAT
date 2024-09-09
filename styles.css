@@ -1,0 +1,129 @@
+/* Reseta margens e preenchimentos, e define box-sizing para border-box em todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #fff; /* Cor do texto em branco */
+  background: #ff0000; /* Fundo preto para toda a página */
+}
+
+/* Estilos para o cabeçalho */
+header {
+  background: #ff0000;
+  color: #fff;
+  padding: 1rem 0;
+  border-bottom: 4px solid #0f9101; /* Borda vermelha inferior no cabeçalho */
+}
+
+header .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Título do cabeçalho */
+header h1 {
+  margin: 0;
+  text-align: center;
+  border: 2px solid #0f9101; /* Borda vermelha ao redor do título */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* Estilos para o menu de navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilos para a seção hero */
+.hero {
+  background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 0;
+  border: 4px solid #0f9101; /* Borda vermelha ao redor da seção hero */
+}
+
+.hero .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Estilos para as caixas de informações */
+.info-box {
+  padding: 2rem;
+  border: 4px solid #0f9101; /* Borda vermelha ao redor das seções */
+  margin: 1rem 0;
+  background: #ff0000; /* Fundo escuro para as seções */
+}
+
+.info-box h2 {
+  border-bottom: 2px solid #0f9101;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background: #ff0000;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 4px solid #0f9101; /* Borda vermelha superior no rodapé */
+}
+
+footer .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Estilos para o container de vídeos */
+.video-container {
+  text-align: center; /* Centraliza o vídeo principal */
+  margin-bottom: 1rem; /* Adiciona margem abaixo do vídeo principal */
+}
+
+/* Estilos para categorias de vídeos */
+.categoria-videos {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  justify-content: center; /* Centraliza os vídeos pequenos */
+  margin-top: 1rem; /* Adiciona margem superior para separar do conteúdo acima */
+  padding: 0; /* Remove padding se necessário */
+}
+
+.categoria-videos::-webkit-scrollbar {
+  height: 8px; /* Altura da barra de rolagem horizontal */
+}
+
+.categoria-videos::-webkit-scrollbar-thumb {
+  background-color: #0f9101; /* Cor da barra de rolagem */
+}
+
+/* Estilos para imagens dos vídeos pequenos */
+.categoria-videos img {
+  height: 150px; /* Ajuste a altura dos vídeos pequenos conforme necessário */
+  border: none; /* Remove a borda das imagens */
+}
